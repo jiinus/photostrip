@@ -32,5 +32,9 @@ Photostrip is a lightweight JQuery-plugin to adjust arbitrary number of blocks o
 
 ### Javascript
 ```javascript
-$('.photostrip').photostrip();
+$('.photostrip').photostrip({
+	height: 300,		// Maximum height of photos on a row
+	gap: 8,				// Gap between the photos
+	watchResize: true	// Update layout when browser is resized
+});
 ```
