@@ -3,6 +3,7 @@
 Photostrip is a lightweight JQuery-plugin to layout differently sized elements to evenly justified rows.
 
 ## Example
+```
  _____   _______________   __________
 |     | |               | |          |
 |     | |               | |          |
@@ -15,7 +16,7 @@ Photostrip is a lightweight JQuery-plugin to layout differently sized elements t
 |              | |         | |       |
 |              | |         | |       |
 |______________| |_________| |_______|
-
+```
 
 ## Usage
 
