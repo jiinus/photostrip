@@ -26,13 +26,13 @@ Photostrip is a lightweight JQuery-plugin to layout differently sized elements t
 	<div class="photo" data-original-width="300" data-original-height="200">
 		<img src="photo1.jpg">
 	</div>
-	<div class="photo" data-original-width="300" data-original-height="200">
+	<div class="photo" data-original-width="100" data-original-height="500">
 		<img src="photo2.jpg">
 	</div>
-	<div class="photo" data-original-width="300" data-original-height="200">
+	<div class="photo" data-original-width="300" data-original-height="300">
 		<img src="photo3.jpg">
 	</div>
-	<div class="photo" data-original-width="300" data-original-height="200">
+	<div class="photo" data-original-width="200" data-original-height="600">
 		<img src="photo4.jpg">
 	</div>
 </div>
