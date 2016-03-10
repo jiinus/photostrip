@@ -1,6 +1,6 @@
 # Photostrip
 
-Photostrip is a lightweight JQuery-plugin to adjust arbitrary number of blocks on an evenly justified rows.
+Photostrip is a lightweight JQuery-plugin to layout differently sized elements to evenly justified rows.
 
 ## Example
 
