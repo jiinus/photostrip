@@ -38,3 +38,26 @@ $('.photostrip').photostrip({
 	watchResize: true	// Update layout when browser is resized
 });
 ```
+
+### Angular-plugin
+
+There's also an Angular-plugin which can be used to live-update the layout when the parameters change, for example if you want to use larger photo size for other view mode and smaller for another or something like that.
+
+#### Usage
+
+Load the script file:
+```html
+<script type="text/javascript" src="angular-photostrip.js"></script>
+```
+
+Add the photostrip module as a dependency to your application module:
+```javascript
+var app = angular.module('MyApp', ['ng-photostrip'])
+```
+
+Apply the directive to your photostrip-container:
+```html
+<div class="photostrip" ng-photostrip="{ height: photostripHeight, gap: photostripGap }">
+	...
+</div>
+```
