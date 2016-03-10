@@ -7,7 +7,7 @@
  *   http://www.opensource.org/licenses/mit-license.php
  *
  * Project home:
- *   http://www.github.net/jiinus/jquery.photostrip.js
+ *   http://www.github.net/jiinus/photostrip
  *
  * Version:  1.0.0
  */
