@@ -153,7 +153,7 @@
 					} else {
 						// Allow 25% deviation up from targetHeight before capping
 						if (commonHeight > targetHeight * 1.25) {
-							commonHeight = (numRemaining) ? targetHeight : targetHeight * 1.25;
+							commonHeight = (numRemaining == 0) ? targetHeight : targetHeight * 1.25;
 						}
 					}
 
