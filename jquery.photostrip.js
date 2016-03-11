@@ -151,9 +151,9 @@
 					if (nextPhotoMinWidth > containerWidth) {
 						commonHeight = commonHeight;
 					} else {
-						// Allow 50% deviation up from targetHeight before capping
-						if (commonHeight > targetHeight * 1.5) {
-							commonHeight = targetHeight;
+						// Allow 25% deviation up from targetHeight before capping
+						if (commonHeight > targetHeight * 1.25) {
+							commonHeight = targetHeight * 1.25;
 						}
 					}
 
