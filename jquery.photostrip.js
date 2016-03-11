@@ -55,7 +55,11 @@
 			this.layout();
 		},
 
-		layout: function() {
+		layout: function(retryIfScrollbarsAdded) {
+
+			if (retryIfScrollbarsAdded === undefined) {
+				retryIfScrollbarsAdded = true;
+			}
 
 			var $container = $(this.element);
 			var containerWidth = $container.width();
@@ -147,7 +151,10 @@
 					if (nextPhotoMinWidth > containerWidth) {
 						commonHeight = commonHeight;
 					} else {
-						commonHeight = Math.min(commonHeight, targetHeight);
+						// Allow 50% deviation up from targetHeight before capping
+						if (commonHeight > targetHeight * 1.5) {
+							commonHeight = targetHeight;
+						}
 					}
 
 					for (var i = 0; i < photoSizes.length; i++)
@@ -179,6 +186,13 @@
 			if (totalHeight < targetHeight) totalHeight = targetHeight;
 
 			$container.height(totalHeight + (gap/2));
+
+			// Check if container width shrunk after layout (due to possible scrollbar) and if so, redo... :/
+			if (retryIfScrollbarsAdded && this.settings.direction != 'horizontal' && $container.width() < containerWidth) {
+				console.log('--- redo layout');
+				this.layout(false);
+				return;
+			}
 
 			if (this.settings.complete) {
 				this.settings.complete.call(this);
