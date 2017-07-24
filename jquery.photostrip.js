@@ -116,7 +116,7 @@
 				if (this.settings.direction == 'horizontal') {
 					var _th = targetHeight;
 					$photo.css({
-						width: (_th * size.r) + 'px',
+						width: ((_th - gap) * size.r + gap) + 'px',
 						height: _th + 'px'
 					});
 					continue;
